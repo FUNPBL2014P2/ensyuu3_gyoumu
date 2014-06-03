@@ -25,7 +25,7 @@
     self.nameTextField.keyboardType = UIKeyboardTypeDefault;
     
     // リターンキーの種類を設定
-    self.nameTextField.returnKeyType = UIReturnKeyDefault;
+    self.nameTextField.returnKeyType = UIReturnKeyDone;
     
     // 編集中にテキスト消去ボタンを表示
     self.nameTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
