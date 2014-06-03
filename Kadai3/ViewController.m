@@ -19,6 +19,18 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
+    // キーボードの種類を設定
+    self.nameTextField.keyboardType = UIKeyboardTypeDefault;
+    
+    // リターンキーの種類を設定
+    self.nameTextField.returnKeyType = UIReturnKeyDefault;
+    
+    // 編集中にテキスト消去ボタンを表示
+    self.nameTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
+    
+    // プレースホルダ
+    self.nameTextField.placeholder = @"名前を入力してください";
+    
 }
 
 - (void)didReceiveMemoryWarning
