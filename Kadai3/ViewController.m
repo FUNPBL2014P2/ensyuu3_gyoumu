@@ -14,6 +14,8 @@
 
 @implementation ViewController
 
+// textFieldはUITextField型の変数
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -31,7 +33,21 @@
     // プレースホルダ
     self.nameTextField.placeholder = @"名前を入力してください";
     
+    // delegate設定
+    self.nameTextField.delegate = self;
 }
+
+/*
+ * キーボードでReturnキーが押されたとき
+ */
+- (BOOL)textFieldShouldReturn:(UITextField *)nameTextField
+{
+    // キーボードを隠す
+    [self.view endEditing:YES];
+    
+    return YES;
+}
+
 
 - (void)didReceiveMemoryWarning
 {
