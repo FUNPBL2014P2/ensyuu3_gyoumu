@@ -23,18 +23,23 @@
     
     // キーボードの種類を設定
     self.nameTextField.keyboardType = UIKeyboardTypeDefault;
+    self.messageTextField.keyboardType = UIKeyboardTypeDefault;
     
     // リターンキーの種類を設定
     self.nameTextField.returnKeyType = UIReturnKeyDone;
+    self.messageTextField.returnKeyType = UIReturnKeyDone;
     
     // 編集中にテキスト消去ボタンを表示
     self.nameTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
+    self.messageTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
     
     // プレースホルダ
     self.nameTextField.placeholder = @"名前を入力してください";
+    self.messageTextField.placeholder = @"メッセージを入力してください";
     
     // delegate設定
     self.nameTextField.delegate = self;
+    self.messageTextField.delegate = self;
 }
 
 /*
