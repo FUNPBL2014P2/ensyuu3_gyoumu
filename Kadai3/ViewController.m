@@ -21,6 +21,9 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
+    //messageLabelの決定
+    self.messageLabel.text = @"Message";
+    
     // キーボードの種類を設定
     self.nameTextField.keyboardType = UIKeyboardTypeDefault;
     
