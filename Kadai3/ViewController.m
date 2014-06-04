@@ -55,4 +55,6 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)sendBtn:(id)sender {
+}
 @end
